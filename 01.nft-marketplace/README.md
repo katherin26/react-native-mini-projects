@@ -5,3 +5,7 @@
 3. cd 01.nft-marketplace
 4. choose template ===> blank : a minimal app as clean as an empty canvas
 5. npm start
+
+**Install Dependencies using :**
+
+1. expo install namedependencie
