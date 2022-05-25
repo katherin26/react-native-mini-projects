@@ -4,6 +4,15 @@ import { COLORS, SIZES, SHADOWS, assets } from "../constants";
 import { CircleButton, RectButton } from "./Button";
 import { SubInfo, EthPrice, NFTTitle } from "./SubInfo";
 
+/*NOTE:  
+  handlePress function : This is how you do navigation using navigator in react native it's quite
+  similar what we do in react using react router.
+  But instead of the url we have the "Details".
+
+  If we look in App.js We can see inside the <Stack.screen name="Details" component={Details}> = 
+
+
+*/
 const NFTCard = ({ data }) => {
   const navigation = useNavigation();
   return (
@@ -46,7 +55,11 @@ const NFTCard = ({ data }) => {
           }}
         >
           <EthPrice price={data.price} />
-          <RectButton />
+          <RectButton
+            minWidth={120}
+            fontSize={SIZES.font}
+            handlePress={() => navigation.navigate("Details", { data })}
+          />
         </View>
       </View>
     </View>
