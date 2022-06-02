@@ -4,7 +4,7 @@ import React from "react";
 const DetailsBid = () => {
   return (
     <View>
-      <Text>DetailsBid</Text>
+      <Text>DetailsBiddddddddddddd</Text>
     </View>
   );
 };
