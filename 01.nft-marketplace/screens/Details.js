@@ -34,6 +34,11 @@ const DetailsHeader = ({ data, navigation }) => (
       left={15}
       top={StatusBar.currentHeight + 10}
     />
+    <CircleButton
+      imgUrl={assets.heart}
+      right={15}
+      top={StatusBar.currentHeight + 10}
+    />
   </View>
 );
 function Details({ route, navigation }) {
@@ -69,6 +74,10 @@ function Details({ route, navigation }) {
         ListHeaderComponent={() => (
           <React.Fragment>
             <DetailsHeader data={data} navigation={navigation} />
+            <SubInfo />
+            <View style={{ padding: SIZES.font }}>
+              <DetailsDesc data={data} />
+            </View>
           </React.Fragment>
         )}
       />
